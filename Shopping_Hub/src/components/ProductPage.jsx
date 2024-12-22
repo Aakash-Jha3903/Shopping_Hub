@@ -54,13 +54,6 @@ const Product = () => {
     console.log(cartItem);
   }, [dealsLoading, dealsData, cartItem]);
 
-  // if (dealsLoading) {
-  //   return (
-  //     <div>
-  //       <Loader />
-  //     </div>
-  //   );
-  // }
 
   return (
     <section
@@ -113,24 +106,6 @@ const Product = () => {
                             {truncateTitle(deal?.deal_title) || "N/A"}
                           </h5>
                         </a>
-                        {/* {deal?.deal_price?.amount && (
-                          <div className="py-2 flex items-center">
-                            <h5 className="text-2xl font-medium text-blue-600">
-                              ₹{deal?.deal_price?.amount || "N/A"}
-                            </h5>
-                            <h5
-                              className={`text-[15px] opacity-70 line-through ml-2 ${
-                                mode === "dark"
-                                  ? " text-white"
-                                  : " text-zinc-900"
-                              }`}
-                            >
-                              ₹
-                              {deal?.list_price?.amount ||
-                                deal?.deal_price?.amount}
-                            </h5>
-                          </div>
-                        )} */}
                         <div className="flex justify-between items-end">
                           <h6 className="text-sm font-medium">
                             Stock:{" "}
@@ -138,28 +113,6 @@ const Product = () => {
                               {deal?.deal_state}
                             </span>
                           </h6>
-                          {/* <div className="flex">
-                            <button
-                              className={`text-blue-600 border border-blue-600 hover:bg-blue-600 hover:text-white rounded py-1 px-3 text-sm mr-2 ${
-                                mode === "dark"
-                                  ? "dark:bg-slate-800"
-                                  : "bg-white"
-                              }`}
-                            >
-                              <FontAwesomeIcon icon={faHeart} />
-                            </button>
-                            <button
-                              className={`border ${
-                                isInCart
-                                  ? "bg-gray-400 border-gary-400"
-                                  : "bg-blue-600 border-blue-600"
-                              } text-white hover:bg-opacity-90 py-1 px-3 rounded text-sm`}
-                              onClick={() => handleAddToCart(deal)}
-                              disabled={isInCart}
-                            >
-                              <FontAwesomeIcon icon={faShoppingCart} />
-                            </button>
-                          </div> */}
                         </div>
                       </div>
                     </div>

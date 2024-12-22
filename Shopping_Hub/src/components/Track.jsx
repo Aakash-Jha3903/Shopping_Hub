@@ -88,5 +88,4 @@ const Incentives3 = () => {
     </section>
   );
 };
-
 export default Incentives3;

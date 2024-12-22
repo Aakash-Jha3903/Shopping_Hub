@@ -1,7 +1,6 @@
 // components/Footer.js
 import React, { useContext } from "react";
 import {
-  // BsDribbble,
   BsFacebook,
   BsGithub,
   BsInstagram,
@@ -104,5 +103,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;

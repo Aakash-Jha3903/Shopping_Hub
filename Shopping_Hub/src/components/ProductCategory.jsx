@@ -7,7 +7,6 @@ import { Link, useNavigate } from "react-router-dom";
 
 const responsive = {
   superLargeDesktop: {
-    // the naming can be any, depends on you.
     breakpoint: { max: 3000, min: 1024 },
     items: 5,
   },
@@ -129,5 +128,4 @@ const ProductCat = () => {
     </section>
   );
 };
-
 export default ProductCat;

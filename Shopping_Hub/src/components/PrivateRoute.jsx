@@ -10,6 +10,5 @@ export const PrivateRoute = ({ children }) => {
   if (value.loader) {
     return <Loader />;
   }
-
   return value.userLogin ? children : <Navigate to="/login" replace />;
 };

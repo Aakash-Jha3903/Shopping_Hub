@@ -1,8 +1,6 @@
 import { useContext, Fragment, useState } from "react";
 import MyContext from "../context/MyContext";
 import { Link, useNavigate } from "react-router-dom";
-// import { BsFillCloudSunFill } from "react-icons/bs";
-// import { FiSun } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
 import { IoMoonOutline } from "react-icons/io5";
 import { IconContext } from "react-icons";
